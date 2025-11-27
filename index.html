@@ -56,7 +56,7 @@
         }
 
         .nav-links li {
-            margin: 3px 10px 3px;
+            margin: 3px 0 3px;
         }
 
         .nav-links a {
@@ -97,20 +97,19 @@
             min-height: 800px;
             border: 0;
         }
-        @media (max-width: 1000px) {
+        @media (max-width: 1042px) {
             .header-title{
                 font-size: 1.5rem;
             }
         }
-        /* == 針對小螢幕設備 (< 600px) 的響應式樣式 == */
-        @media (max-width: 760px) {
+        @media (max-width: 914px) {
             /* 調整標頭左右內邊距以容納漢堡按鈕，並縮小標題字體 */
             .header-container {
                 padding-left: 20px;
             }
             
             .header-title {
-                font-size: 1rem; /* 縮小標題字體 */
+                /*font-size: 1rem; /* 縮小標題字體 */
                 margin-top: 70px;
             }
 
@@ -118,7 +117,6 @@
             .hamburger-toggle {
                 display: block; 
             }
-
 
             nav.navbar{
                 margin-top: 70px;
@@ -157,11 +155,15 @@
                 display: flex; 
             }
         }
-
         /* == 針對電腦版或平板的樣式 (>= 761px) == */
         @media (min-width: 761px) {
             .iframeTable {
                 max-width: 1000px;
+            }
+        }
+        @media (max-width: 480px) {
+            .header-title{
+                font-size: 0.9rem;
             }
         }
     </style>
@@ -182,10 +184,10 @@
             
             <ul class="nav-links" id="nav-menu">
                 <li><a href="#home">首頁</a></li>
-                <li><a href="https://forms.gle/BW8dDTo4y8deZdPP7" target="_blank">導師通報表</a></li>
-                <li><a href="https://script.google.com/macros/s/AKfycbxRy9fPxf-3HYg0kQIkb96hTrR9EB51ybxucLi6BThmkTlk33fLmm4idIk5f7-RO2xyEQ/exec?page=triage" target="_blank">檢傷</a></li>
-                <li><a href="https://script.google.com/macros/s/AKfycbxRy9fPxf-3HYg0kQIkb96hTrR9EB51ybxucLi6BThmkTlk33fLmm4idIk5f7-RO2xyEQ/exec?page=rest" target="_blank">休息</a></li>
-                <li><a href="https://script.google.com/macros/s/AKfycbxRy9fPxf-3HYg0kQIkb96hTrR9EB51ybxucLi6BThmkTlk33fLmm4idIk5f7-RO2xyEQ/exec?page=hospital" target="_blank">送醫</a></li>
+                <li><a href="https://forms.gle/BW8dDTo4y8deZdPP7" target="_blank">導師通報</a></li>
+                <li><a href="https://script.google.com/macros/s/AKfycbxRy9fPxf-3HYg0kQIkb96hTrR9EB51ybxucLi6BThmkTlk33fLmm4idIk5f7-RO2xyEQ/exec?page=triage" target="_blank">檢傷組通報</a></li>
+                <li><a href="https://script.google.com/macros/s/AKfycbxRy9fPxf-3HYg0kQIkb96hTrR9EB51ybxucLi6BThmkTlk33fLmm4idIk5f7-RO2xyEQ/exec?page=rest" target="_blank">休息組通報</a></li>
+                <li><a href="https://script.google.com/macros/s/AKfycbxRy9fPxf-3HYg0kQIkb96hTrR9EB51ybxucLi6BThmkTlk33fLmm4idIk5f7-RO2xyEQ/exec?page=hospital" target="_blank">送醫組通報</a></li>
             </ul>
         </nav>
     </div>
